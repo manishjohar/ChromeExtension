@@ -1,0 +1,53 @@
+{
+  "name": "Watcher",
+  "version": "1.0",
+  "description": "Monitoring App!",
+  "permissions": [
+    "storage",
+    "background",
+    "tabs",
+    "contextMenus",
+    "debugger",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "background.js",
+      "menu.js",
+      "constants.js",
+      "service.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "image.png",
+      "48": "48px.png"
+    },
+    "default_title": "See Watchers List"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.com/*",
+        "*://*.in/*",
+        "*://*.org/*",
+        "*://*.edu/*"
+      ],
+      "css": [
+        "toastr.css"
+      ],
+      "js": [
+        "content.js",
+        "jquery.js",
+        "toastr.min.js",
+        "elementData.js",
+        "constants.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "toastr.css"
+  ],
+  "manifest_version": 2
+}
