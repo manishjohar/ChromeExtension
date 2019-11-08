@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  width: 28rem;
+  min-height: 300px;
+}
+
+.headColor {
+    background: rgba(16,16,17,0.8);
+    color: white;
+}
+.header {
+  line-height: 20px;
+
+}
+
+.bodyColor {
+    color: #198fff;
+}
+.body {
+    width: 100%;
+    min-height: 280px;
+}
