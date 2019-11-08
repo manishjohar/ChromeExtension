@@ -1,0 +1,28 @@
+{
+    "request": {
+        "clientID" : "socket client ID",
+        "data": [
+                    {
+                        "id" : "notification unique id1",
+                        "url" : "some url",
+                        "xpath" : "this is full xpath not xpath",
+                        "value" : "old  value"
+                    },
+                    {
+                        "id" : "notification unique id2",
+                        "url" : "some url",
+                        "xpath" : "this is full xpath not xpath",
+                        "value" : "old  value"
+                    }
+                ]
+    },
+    "response": {
+            "clientID" : "socket client ID",
+            "id" : "notification unique id1 or id2",
+            "url" : "some url",
+            "xpath" : "this is full xpath not xpath",
+            "value" : "old  value",
+            "message": "about new value"
+    }
+}
+
