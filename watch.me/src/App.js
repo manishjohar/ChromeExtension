@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 
 function App() {
-  socketRequest({d:'dads'});
   return (
     <div className="App">
       <div className='header headColor'>
