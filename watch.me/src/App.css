@@ -1,22 +1,12 @@
-.App {
-  text-align: center;
-  width: 28rem;
-  min-height: 300px;
+
+body {
+  min-width: 0;
 }
 
-.headColor {
-    background: rgba(16,16,17,0.8);
-    color: white;
-}
-.header {
-  line-height: 20px;
-
+html {
+  height: 0;
 }
 
-.bodyColor {
-    color: #198fff;
-}
-.body {
-    width: 100%;
-    min-height: 280px;
+.title {
+  margin: 0px 28%;
 }
